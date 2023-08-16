@@ -4,3 +4,7 @@ _ReSharper.*
 bin
 obj
 packages
+*.v2
+*.lock
+*.bin
+*.vsidx
