@@ -68,17 +68,20 @@ using SMB4_Improved_Stat_Tracker;
 //}
 
 //Definitely broken right now since idk how to read the seasondata
-//SMB4_Improved_Stat_Tracker.DataReading.SeasonFileReader seasondatareader = new SMB4_Improved_Stat_Tracker.DataReading.SeasonFileReader();
+SMB4_Improved_Stat_Tracker.DataReading.SeasonFileReader seasondatareader = new SMB4_Improved_Stat_Tracker.DataReading.SeasonFileReader();
 //seasondatareader.DecompressSeasonSavFiles(@"C:\Users\wesoa\AppData\Local\Metalhead\Super Mega Baseball 4\76561198197840490\", "season-546EE2F0-2878-41D1-8BA1-C8FAA34FDE80.sav");
 
+//MAC location
+seasondatareader.DecompressSeasonSavFiles("/Users/wesanderson/Desktop/SMB4_Improved_Stat_Tracker/CsvCompares/DataCopyLocation/ExampleFiles/", "season-test.sav");
 
-Text2CSV text2CSV = new Text2CSV();
-string[] convertEs = Directory.GetFiles(@".\DataCopyLocation\Entire Game\Text2CSV");
 
-foreach (string s in convertEs)
-{
-    text2CSV.ReadTXTProduceCSV(s);
-}
+//Text2CSV text2CSV = new Text2CSV();
+//string[] convertEs = Directory.GetFiles(@".\DataCopyLocation\Entire Game\Text2CSV");
+
+//foreach (string s in convertEs)
+//{
+//    text2CSV.ReadTXTProduceCSV(s);
+//}
 
 
 Console.WriteLine("");
